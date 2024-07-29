@@ -1,0 +1,69 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+
+
+
+<div class="row mt-3">
+    <div class="col-md-4">
+        <h5 style="color: rgb(250, 166, 250);">Filter by Category</h5>
+        <hr>
+        <p><a class="anchor" href="/catfilter/1">By Albums</a></p>
+        <p><a class="anchor" href="/catfilter/2">By Photocards</a></p>
+        <p><a class="anchor" href="/catfilter/3">By Posters</a></p>
+        <p><a class="anchor" href="/catfilter/4">By Merch Combos</a></p>
+        <p><a class="anchor" href="/catfilter/5">By BTS Fashion</a></p>
+        <p><a class="anchor" href="/catfilter/6">By BTS Jwellery</a></p>
+
+        <h5 style="color: rgb(250, 166, 250);">Filter By Price Range</h5>
+        <hr>
+        <form action="/range">
+            <div class="mb-3">
+                <label for="Input1" class="form-label" >Min Value</label>
+                <input type="number" name="min" class="form-control" id="Input1" placeholder="Minimum value">
+            </div><!---min value-->
+            <div class="mb-3">
+                <label for="Input2" class="form-label" >Max Value</label>
+                <input type="number" name="max" class="form-control" id="Input2" placeholder="Maximum value">
+            </div><!----max value--->
+            <div class="mb-3">
+                <input type="submit" value="Submit" class="btn btn-primary" style="background-color: rgb(107, 15, 107); color: white;" />
+            </div>
+        </form>
+        <h5 style="color: rgb(250, 166, 250);">Sort By Price</h5>
+        <hr>
+        <p><a href="/sort/0" class="anchor">Low to High</a></p>
+        <p><a href="/sort/1" class="anchor">High to Low</a></p>
+    </div><!--------filter side bar ends----->
+    <div class="col-md-8">
+        <div class="row">
+        {% for x in products %}
+            <div class="col-md-4 mt-4">
+                <div class="card" style="width: 100%;">
+                    <img src="{{x.pimage.url}}" width="100%" height="250px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"style="color: rgb(172, 7, 172);">{{x.name}}</h5>
+                      <p class="card-text"style="color: rgb(172, 7, 172);">Rs.{{x.price}}</p>
+                      {% if x.cat == 1 %}
+                        <p class="card-text"style="color: rgb(172, 7, 172);">Albums</p>
+                      {% elif x.cat == 2 %}
+                      <p class="card-text"style="color: rgb(172, 7, 172);">Photocards</p>
+                      {% elif x.cat == 3 %}
+                      <p class="card-text"style="color: rgb(172, 7, 172);">Posters</p>
+                      {% elif x.cat == 4 %}
+                      <p class="card-text"style="color: rgb(172, 7, 172);">Merch Combos</p>
+                      {% else %}
+                      <p class="card-text"style="color: rgb(172, 7, 172);">BTS Fashion</p>
+                      {% endif %}
+                      <a href="/pdetails/{{x.id}}" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                    </div>
+                </div>
+            </div><!----product 1 ends-->
+        {% endfor %}    
+        </div>
+    </div><!----product ends---->
+    </div><!------filter and product section----->
+
+
+{% endblock 'main' %}

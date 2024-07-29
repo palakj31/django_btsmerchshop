@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <style>
+          body {
+            background-image: url('C:/btspot7.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;  
+        }
+
+        .container {
+            margin-top: 200px;
+            margin-left: 400px;
+            position: absolute;
+            top: 20px;;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+            padding : 50px;
+            border-radius: 10px;
+            border: 2px solid rgb(107, 15, 107); /* Border color for the form container */
+            margin-top: 200px;
+            
+        }
+
+        h2, label {
+            color: rgb(226, 11, 226);
+            font-weight: bold; /* Make text bold */
+            
+        }
+
+        input.form-control {
+            border: 2px solid rgb(226, 11, 226); /* Border color for form fields */
+            font-weight: bold; /* Make text in form fields bold */
+        
+        }
+
+        input[type="submit"] {
+            background-color: rgb(107, 15, 107);
+            color: white;
+            font-weight: bold; /* Make submit button text bold */
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(226, 11, 226);
+            font-weight: bold; /* Make text in the link bold */
+        }
+
+    </style>
+    <div class="col-md-12">
+        <a href="index.html" style="color:white;" >Home Page</a>
+    </div>
+    <h2 style="color: rgba(255, 255, 255, 0.8); background-color: rgb(172, 7, 172); border-color: aliceblue; text-align: center; margin-bottom: 30px; margin-top: 10px; width: 50%; margin-left: auto; margin-right: auto;">Login To Purple World</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 border border-light border-2 mt-1">
+                <form method="POST" action="">
+                    <div class="mb-3">
+                        <label for="input1" class="form-label" style="color: rgb(226, 11, 226); background-color:white;">Username:</label>
+                        <input type="email" class="form-control" id="input1" placeholder="Enter Username">
+                    </div><!-------username---->
+                    <div class="mb-3">
+                        <label for="input2" class="form-label" style="color:rgb(226, 11, 226);background-color:white;">Password:</label>
+                        <input type="password" class="form-control" id="input1" placeholder="Enter Password">
+                    </div><!--------password---->
+                    <div class="mb-3">
+                        <input type="submit" class="btn btn-primary" style="background-color: rgb(107, 15, 107); color: white;" value="Login">
+                        <a href="register.html" style= "text-decoration: none; color: rgb(226, 11, 226); border-bottom: 1px solid white;">Not a User? Register</a>
+                    </div><!-------submit button---->
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="asset/js/bootstrap.min.css"></script>
+</body>
+</html>

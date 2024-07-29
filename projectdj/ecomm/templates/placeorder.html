@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'main' %}
+
+<!--------cart content----->
+<div class="row mt-5">
+    <div class="col-md-9">
+        <h5 style="background-color: purple; color: white; padding:2px; ">Customer Details</h5>
+        {% for x in products %}
+        {% if forloop.counter == 1 %}
+        <p><strong>Name :</strong>&nbsp;&nbsp;{{x.uid.username}}</p>
+        <p><strong>Mobile :</strong>&nbsp;&nbsp;9423804322</p>
+        <p><strong>Email :</strong>&nbsp;&nbsp;{{x.uid.email}}</p>
+        {% endif %}
+        {% endfor %}
+        <div class="row">
+            <h5 style="background-color: purple; color: white; padding:2px;">Product Details</h5>
+            {% for x in products %}
+            <div class="col-md-4">
+                <img src="{{x.pid.pimage.url}}" width="100%" alt=""/>
+            </div>
+            <div class="col-md-8">
+                <p><strong>Product Name :</strong>&nbsp;&nbsp;{{x.pid.name}}</p>
+                <p><strong>Price :</strong>&nbsp;&nbsp;Rs.{{x.pid.price}}</p>
+                {% if x.pid.cat == 1%}
+                <p><strong>Category :</strong>&nbsp;&nbsp;Albums</p>
+                {% elif x.pid.cat == 2 %}
+                <p><strong>Category :</strong>&nbsp;&nbsp;Photocards</p>
+                {% elif x.pid.cat == 3 %}
+                <p><strong>Category :</strong>&nbsp;&nbsp;Posters</p>
+                {% elif x.pid.cat == 4 %}
+                <p><strong>Category :</strong>&nbsp;&nbsp;Merch Combos</p>
+                {% elif x.pid.cat == 5 %}
+                <p><strong>Category :</strong>&nbsp;&nbsp;BTS Fashion</p>
+                {% else %}
+                <p><strong>Category :</strong>&nbsp;&nbsp;BTS Jwellery</p>
+                {% endif %}
+                <p><strong>Product Details :</strong>&nbsp;&nbsp;{{x.pid.pdetails}}</p>
+                <!-- <p>
+                    <strong>QTY:</strong>
+                    <a href="/updateqty/1/{{x.id}}"><button class="btn btn-primary" style="background-color: rgb(107, 15, 107); color: white;">+</button></a>
+                    <input type="number" value="{{x.qty}}">
+                    <a href="/updateqty/0/{{x.id}}"><button class="btn btn-primary" style="background-color: rgb(243, 154, 243); color: white;">-</button></a>
+                </p> -->
+                <a href="/remove/{{x.id}}" ><button class="btn btn-primary" style="background-color: rgb(107, 15, 107); color: white;">Remove</button></a>&nbsp;&nbsp;&nbsp;
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!---------customer and product details------>
+    <div class="col-md-3">
+        <h5 style="background-color: purple; color: white; display: inline-block; padding: 5px;">Total Amount</h5>
+        <p><strong>Total({{n}}items):</strong>Rs.{{total}}</p>
+        <hr>
+        <p><strong>Total Amount :</strong>Rs.{{total}}</p>
+        <a href="/makepayment"><button class ="btn btn-primary" style="background-color: rgb(107, 15, 107); color: white;">Make Payment</button></a>
+    </div>
+    <!---------total amount section--------->
+</div>           
+
+<!--------cart section end------>
+
+{% endblock 'main' %}

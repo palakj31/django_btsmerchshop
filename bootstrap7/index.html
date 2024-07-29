@@ -1,0 +1,338 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS Merch Shop | Home</title>
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="asset/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <style>
+body {
+    background-image:  url('C:/btslogo7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;  
+}
+nav {
+      background-color: rgba(252, 243, 252, 0.8); 
+  }
+img {
+      margin-right: 10px; /* Adjust the value as needed */
+  }
+.dropdown-menu {
+      background-color: rgb(172, 7, 172); /* Set your desired background color */
+  }
+.dropdown-item {
+      color: white; 
+  }
+    </style>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <img src="c:/logop.jpg" alt="BTS Logo" height="50px" width="50px">
+                        <a class="navbar-brand" href="index.html" style="color: rgb(172, 7, 172);">BTS MERCH SHOP</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html" style="color: rgba(87, 7, 87, 0.8);">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html"  style="color: rgba(87, 7, 87, 0.8);">About</a>
+                                </li>
+                                <!----
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color: rgba(87, 7, 87, 0.8);">
+                                    Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>--->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cart.html"style="color: rgba(87, 7, 87, 0.8);">Cart</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html"style="color: rgba(87, 7, 87, 0.8);">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html"style="color: rgba(87, 7, 87, 0.8);">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="register.html"style="color: rgba(87, 7, 87, 0.8);">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="logout.html"style="color: rgba(87, 7, 87, 0.8);">Logout</a>
+                                </li>
+                            </ul>
+                            <!-----
+                                <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit"  style="color: rgba(87, 7, 87, 0.8);">Search</button>
+                                </form>---->
+                        </div>
+                    </div>
+                </nav>
+            </div><!------Navigation bar ends---->
+        </div><!--------Navigation row ends---->
+
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <h5 style="color: rgb(250, 166, 250);">Filter by Category</h5>
+                <hr>
+                <p><a class="anchor" href="#">By Albums</a></p>
+                <p><a class="anchor" href="#">By Photocards</a></p>
+                <p><a class="anchor" href="#">By Posters</a></p>
+                <p><a class="anchor" href="#">By Merch Combos</a></p>
+                <p><a class="anchor" href="#">By BTS Fashion</a></p>
+                <p><a class="anchor" href="#">By BTS Jwellery</a></p>
+
+                <h5>Filter By Price Range</h5>
+                <hr>
+                <form action="#">
+                    <div class="mb-3">
+                        <label for="Input1" class="form-label" style="color: rgb(250, 166, 250);">Min Value</label>
+                        <input type="number" class="form-control" id="Input1" placeholder="Minimum value">
+                    </div><!---min value-->
+                    <div class="mb-3">
+                        <label for="Input2" class="form-label" style="color: rgb(250, 166, 250);">Max Value</label>
+                        <input type="number" class="form-control" id="Input2" placeholder="Maximum value">
+                    </div><!----max value--->
+                    <div class="mb-3">
+                        <input type="submit" value="Submit" class="btn btn-primary" style="background-color: rgb(107, 15, 107); color: white;" />
+                    </div>
+                </form>
+                <h5 style="color: rgb(250, 166, 250);">Sort By Price</h5>
+                <hr>
+                <p><a href="#" class="anchor">Low to High</a></p>
+                <p><a href="#" class="anchor">High to Low</a></p>
+            </div><!--------filter side bar ends----->
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title"style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text"style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 1 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 2 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Nmae</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 3 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 4 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 5 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 6 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 7 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 8 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 9 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 10 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 11 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 12 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 13 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 14 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 15 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 16 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 17 ends-->
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="asset/images/btsalbum1.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="color: rgb(172, 7, 172);">Product Name</h5>
+                              <p class="card-text" style="color: rgb(172, 7, 172);">Rs.10000</p>
+                              <a href="product_detail.html" class="btn btn-primary"style="background-color: rgb(107, 15, 107); color: white;">See details</a>
+                            </div>
+                        </div>
+                    </div><!----product 18 ends-->
+                </div>
+            </div><!----product ends---->
+            </div><!------filter and product section----->
+            <!-------footer starts---->
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <h5 style="color: rgb(172, 7, 172);">Address</h5>
+                    <hr>
+                    <p class="purple-text">First Floor,Building No.54<br>
+                    Kims Avenue,Near Rose Park<br>
+                    Juhu,Mumbai<br><br>
+                    <i class="bi bi-telephone-fill"></i>&nbsp;: 7887477265<br>
+                    <i class="bi bi-envelope-fill"></i>&nbsp; : jasoriyapalak@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="color: rgb(172, 7, 172);">Quick Links</h5>
+                    <hr>
+                    <p><a href="index.html" class="anchor" style="color: rgb(172, 7, 172);">Home</a></p>
+                    <p><a href="about.html" class="anchor"style="color: rgb(172, 7, 172);">About</a></p>
+                    <p><a href="cart.html" class="anchor"style="color: rgb(172, 7, 172);">Cart</a></p>
+                    <p><a href="contact.html" class="anchor"style="color: rgb(172, 7, 172);">Contact</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="color: rgb(172, 7, 172);">Contact Us</h5>
+                    <hr>
+                    <h5><a href="http://www.facebook.com" style="color: rgb(172, 7, 172);"><i class="bi bi-facebook"></i></a></h5>
+                    <h5><a href="http://www.instagram.com"style="color: rgb(172, 7, 172);"><i class="bi bi-instagram"></i></a></h5>
+                    <h5><a href="http://www.twitter.com"style="color: rgb(172, 7, 172);"><i class="bi bi-twitter"></i></a></h5>
+                    <h5><a href="http://www.linkedin.com"style="color: rgb(172, 7, 172);"><i class="bi bi-linkedin"></i></a></h5>
+                </div>
+            </div>
+            <!------footer ends------>
+        </div>
+    <script src="asset/js/popper.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script> 
+</body>
+</html>
